@@ -1,7 +1,7 @@
 name = input("Enter your name: ")
-math = float(input("Enter your math: "))
-phys = float(input("Enter your physics: "))
-python = float(input("Enter your python: "))
+math = float(input("Enter your grade "))
+phys = float(input("Enter your grade "))
+python = float(input("Enter your grade "))
 avg = (math+phys+python)/3
 
 scholarship = 35000 if avg >= 90 else 0
