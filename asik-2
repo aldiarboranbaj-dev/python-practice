@@ -1,0 +1,49 @@
+name = input("Enter your name: ")
+math = float(input("Enter your math grade "))
+phys = float(input("Enter your phys grade "))
+python = float(input("Enter your python grade "))
+
+if (math >= 90):
+    math_grade = "Excellent"
+elif (math >= 75):        math_grade = "Good"
+elif (math >= 60):        math_grade = "Satisfactory"
+else: math_grade = "Fail"
+
+if (phys >= 90):
+    phys_grade = "Excellent"
+elif (phys >= 75):        phys_grade = "Good"
+elif (phys >= 60):        phys_grade = "Satisfactory"
+else: phys_grade = "Fail"
+
+if (python >= 90):
+    python_grade = "Excellent"
+elif (python >= 75):        python_grade = "Good"
+elif (python >= 60):        python_grade = "Satisfactory"
+else: python_grade = "Fail"
+
+avg = (math+phys+python)/3
+
+scholarship = 35000 if avg >= 90 else 0
+
+gpa = avg/25
+
+
+
+print("==============================")
+print("STUDENT REPORT CARD")
+print("==============================")
+print("Student :", name)
+print("Name uppercase :", name.upper())
+print("Name lowercase :", name.lower())
+print("length :", len(name))
+
+masked_name = name.replace(name[0], '*',1)
+print("Masked name :", masked_name)
+print("Math :", math_grade)
+print("Physics :", phys_grade)
+print("Python :", python_grade)
+print("------------------------------")
+print("Average :", round(avg, 2))
+print("GPA :", round(gpa, 2))
+print("Scholarship :", scholarship, "KZT")
+print("==============================")
